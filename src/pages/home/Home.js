@@ -4,6 +4,7 @@ import { Divider } from '@material-ui/core';
 import useStyle from './style';
 import Header from './partsOfHome/Header'
 import NewTweet from './partsOfHome/NewTweet'
+import TweetList from './partsOfHome/TweetList';
 
 
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
             <Header />
             <Divider className={classes.divider} />
             <NewTweet />
+            <TweetList />
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import { makeStyles } from "@material-ui/core";
 
-const useStyle = makeStyles({
+const useStyle = makeStyles(theme => ({
 
     root: {
         padding: 20,
@@ -33,8 +33,8 @@ const useStyle = makeStyles({
         minWidth: "5rem"
     },
     personImg: {
-        width: "7.5rem",
-        height: "7.5rem",
+        width: "4.5rem",
+        height: "4.5rem",
         borderRadius: "57%"
     },
     tweetInput: {
@@ -45,12 +45,35 @@ const useStyle = makeStyles({
         fontSize: "1.5rem",
         marginRight: 20,
     },
-    imgButton: { 
+    imgButton: {
         border: "1px solid #3337",
         padding: "0.2rem",
         borderRadius: "50%",
-        marginLeft: 16, 
+        marginLeft: 16,
+    },
+    tweetItem: {
+        backgroundColor: "#fff",
+        padding: 16,
+        marginTop: 7
+    },
+    TweetItemId: {
+        fontSize: "0.9rem",
+        color: theme.palette.text.hint,
+
+    },
+    TweetItemName: {
+        marginLeft: 16,
+        fontSize: 16,
+        fontWeight: 600,
+    },
+    tweetitemContent: {
+        marginRight:10,
+        flex: 1,
+        padding: 5
+    },
+    TweetItemInfo: {
+        marginBottom: 5, 
     }
-})
+}))
 
 export default useStyle;
