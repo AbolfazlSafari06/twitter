@@ -4,14 +4,14 @@ import { Divider, Typography } from '@material-ui/core';
 
 import useStyle from './style';
 
-function Header() {
+function Header({title,icon}) {
     const classes = useStyle()
     return (
         <>
             <div className={classes.root}>
-                <HomeIcon />
+                {icon} 
                 <Typography className={classes.headerTitle}>
-                    خانه
+                    {title}
                 </Typography>
             </div>
             <Divider className={classes.divider} /> 
@@ -19,4 +19,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Header;

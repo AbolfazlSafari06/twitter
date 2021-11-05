@@ -49,7 +49,7 @@ const useStyle = makeStyles(theme => ({
         border: "1px solid #3337",
         padding: "0.2rem",
         borderRadius: "50%",
-        marginLeft: 16,
+        marginLeft: 8,
     },
     tweetItem: {
         backgroundColor: "#fff",
@@ -73,6 +73,9 @@ const useStyle = makeStyles(theme => ({
     },
     TweetItemInfo: {
         marginBottom: 5, 
+    },
+    likeCount:{
+        marginLeft:16
     }
 }))
 

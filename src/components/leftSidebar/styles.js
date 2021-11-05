@@ -4,7 +4,7 @@ const useStyle = makeStyles(theme => ({
     root: {
         width: '25%',
         backgroundColor: '#fff',
-        padding: "1.7rem 1rem",
+        padding: "1.7rem 1rem"
     },
 
     personImg: {
@@ -36,7 +36,26 @@ const useStyle = makeStyles(theme => ({
         overflowY: "scroll",
         marginTop: "3rem",
         borderRadius: "2.5rem",
+        "&::-webkit-scrollbar": {
+            width: 8,
+            height: "max-content",
+            marginLeft: 4,
+            padding: 20,
+            borderRadius: "20px",
+        },
 
+        "&::-webkit-scrollbar-track ": {
+            background: "#d7dadc",
+            marginLeft: 4,
+            padding: 20,
+            borderRadius: "20px",
+        },
+
+        "&::-webkit-scrollbar-thumb ": {
+            background: "#d7dadc",
+            borderRadius: "20px",
+            border: "3px solid  #0f0f0f"
+        }
     },
     tweeterTitle: {
         fontSize: "1.1rem",
